@@ -1,0 +1,45 @@
+.main-header{
+  position: fixed;
+  width: 100%;
+  background-color: $black;
+  padding: 2px;
+}
+.container-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-logo{
+  margin-left: 10px;
+  color: $orange;
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo {
+  width: 50px;
+}
+
+.menu {
+  margin-right: 10px;
+  ul {
+    display: flex;
+    flex: wrap;
+    gap: 50px; //distancia entre objetos
+  
+  a {
+    display: flex;
+    flex: wrap;
+    color:$white;
+    font-size: 20px;
+    text-decoration: none;
+      &:hover {
+        color: $orange;
+        transition: .5s;
+        }
+    }
+  
+  }
+}

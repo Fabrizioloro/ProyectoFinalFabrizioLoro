@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+
+    <title>CERVEZAS NOVILLOS </title>
+</head>
+
+<body>
+        <!--modal container-->
+        <div id="modal-container" class="modal-container"></div>
+    <div class="main-wrapper">
+        <header class="main-header">
+            <div class="container-header">
+                <div class="container-logo">
+                        <h1>NOVILLOS</h1>
+                        <a href="index.html">
+                        <img class="logo"src="./assets/images/logo.jpg">
+                        </a>
+                </div>
+                    <nav class="menu">    
+                        <ul class="menu_items">
+                            <li><a href="#shop">SHOP</a></li>
+                            <li><a href="#cervezas">CERVEZAS</a></li>
+                            <li><a href="#visitanos">VISITANOS</a></li>
+                            <li><span class="material-symbols-outlined" id="verCarrito"><span id="cantidadCarrito" class="cantidad-carrito"></span>shopping_cart</span></li>
+                        </ul>
+                    </nav>    
+            </div>
+        </header>
+        <main>
+            <section class="landing">
+                <div class="contenido">
+                    <div>
+                        <h2>
+                            El mejor lugar de Rocha
+                        </h2>
+
+                    </div>
+                </div>
+            </section>
+            <section class="titulos">
+                <article >
+                    <h2 id="shop">SHOP</h2>
+                </article>  
+            </section>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="assets/images/ale.jpg">
+                        </div>
+                        <div class="card-text">
+                            <h1 class="card-titulo">Ale</h1>
+                            <p> Ale afrutadas, especiadas y aromáticamente complejas con un amplio abanico de sabores</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-button" onclick="agregarAlCarrito(1)">COMPRAR</button>
+                            <p>$ 230</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="assets/images/ipa.jpg">
+
+                        </div>
+                        <div class="card-text">
+                            <h1 class="card-titulo">Hemp Ipa</h1>
+                            <p>Color amarillo algo turbio, en esta IPA predominan los aromas cítricos y resinosos.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-button" onclick="agregarAlCarrito(2)">COMPRAR</button>
+                            <p>$ 220</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="assets/images/paleale.jpg">
+                        </div>
+                        <div class="card-text">
+                            <h1 class="card-titulo">Indica Pale Ale</h1>
+                            <p>Una cervezas de alta graduación alcohólica, mayor cantidad de lúpulo y por lo tanto un amargor y 
+                                aroma intensos y cierta complejidad en el paladar.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-button" onclick="agregarAlCarrito(3)">COMPRAR</button>
+                            <p>$ 210</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="assets/images/stout.jpg">
+
+                        </div>
+                        <div class="card-text">
+                            <h1 class="card-titulo">Stout</h1>
+                                <p> Stout combina muy bien con carnes y vegetales asados,
+                                sushi, sashimi, postres y pescados ahumados.
+                                Suaves sabores a granos oscuros y un amargor contenido</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="card-button" onclick="agregarAlCarrito(4)">COMPRAR</button>
+                            <p>$ 200</p>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            
+            
+            <section class="titulos">
+                <article >
+                    <h2 id="cervezas">CERVEZAS</h2>
+                </article>
+            </section>
+            <div class="contenedor contenedor-slider">
+                <div class="contenedor-flex flex-50">
+                    <section class="slider2"></section>
+                </div>
+                <div class="contenedor-flex flex-50 ">
+                    <img src="/assets/images/plato2.jpg" alt="">
+                </div>
+            </div> 
+            
+            <section class="titulos">
+                <article >
+                    <h2 id="visitanos">VISITANOS</h2>
+                </article>
+            </section>
+            <div class="contenedor">
+                <div class="contenedor-flex flex-50 mapa">
+                    <iframe class="mapa"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13155.859658553238!2d-54.3276662!3d-34.4784143!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x390b3cef3f715c30!2s%E2%80%9CNOVILLOS%E2%80%9D%20-%20Cerveza%20Artesanal%20y%20Gastronom%C3%ADa!5e0!3m2!1ses-419!2suy!4v1670980861438!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contenedor-flex flex-50">
+                    <section class="slider3"></section>
+                </div>
+            </div>  
+        </main>
+    <footer class="main-footer">
+        <div class="container">
+            <img src="/assets/images/logo.jpg" class="logo-footer">
+            <p class="copy">
+                    Developed by Fabrizio Loro
+            </p>
+            <ul class="share-list">
+                
+                <li>
+                    <a href="https://www.instagram.com/novillos_cerveceria/" target="_blank">
+                        <iconify-icon class="social-icon" icon="entypo-social:instagram-with-circle"></iconify-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/novillos.cerveza.rochense" target="_blank">
+                        <iconify-icon class="social-icon" icon="mdi:facebook"></iconify-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="productos.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

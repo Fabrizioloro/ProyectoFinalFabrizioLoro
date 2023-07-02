@@ -1,0 +1,39 @@
+.slider2{
+  width:100%;
+  height: 110vh;
+  background-image:url(/assets/images/ale.jpg);
+  animation: slider2 15s infinite;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slider2 {
+  20%{
+    background-image:url(/assets/images/ipa.jpg);
+  }
+  40%{
+    background-image:url(/assets/images/neipa.jpg);
+  }
+  60%{
+    background-image:url(/assets/images/paleale.jpg);
+  }
+  80%{
+    background-image:url(/assets/images/stout.jpg);
+  }
+  100%{
+    background-image:url(/assets/images/ale.jpg);
+  }
+}
+
+.contenedor-slider{
+  height: 100%;
+  max-width: 80vh;
+  overflow: hidden;
+}
+.contenedor{
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,413 @@
+.poppins {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+.button {
+  border: none;
+}
+.button_icon {
+  font-size: 30px;
+  color: #fff;
+  background: transparent;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+  padding: 2px;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-logo {
+  margin-left: 10px;
+  color: #EEB25A;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+}
+
+.menu {
+  margin-right: 10px;
+}
+.menu ul {
+  display: flex;
+  flex: wrap;
+  gap: 50px;
+}
+.menu ul a {
+  display: flex;
+  flex: wrap;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+.menu ul a:hover {
+  color: #EEB25A;
+  transition: 0.5s;
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/images/fondo_2.jpg);
+  animation: landing 60s infinite;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes landing {
+  20% {
+    background-image: url(/assets/images/fondo_3.jpg);
+  }
+  40% {
+    background-image: url(/assets/images/fondo_3.jpg);
+  }
+  60% {
+    background-image: url(/assets/images/fondo_2.jpg);
+  }
+  80% {
+    background-image: url(/assets/images/fondo_3.jpg);
+  }
+  100% {
+    background-image: url(/assets/images/fondo_3.jpg);
+  }
+}
+.contenido {
+  font-size: 60px;
+  color: #fff;
+}
+
+.main-footer {
+  min-height: 30px;
+  background: #000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.main-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.share-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo-footer {
+  width: 4vw;
+  filter: grayscale(1);
+}
+
+.copy {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.social-icon {
+  color: #6c757d;
+  font-size: 40px;
+  transition: 0.35s ease-in-out;
+}
+.social-icon:hover {
+  color: #EEB25A;
+}
+
+.slider2 {
+  width: 100%;
+  height: 110vh;
+  background-image: url(/assets/images/ale.jpg);
+  animation: slider2 15s infinite;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slider2 {
+  20% {
+    background-image: url(/assets/images/ipa.jpg);
+  }
+  40% {
+    background-image: url(/assets/images/neipa.jpg);
+  }
+  60% {
+    background-image: url(/assets/images/paleale.jpg);
+  }
+  80% {
+    background-image: url(/assets/images/stout.jpg);
+  }
+  100% {
+    background-image: url(/assets/images/ale.jpg);
+  }
+}
+.contenedor-slider {
+  height: 100%;
+  max-width: 80vh;
+  overflow: hidden;
+}
+
+.contenedor {
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+  padding: 5px;
+}
+
+.cards .card-text {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background: #EEB25A;
+}
+.card-footer p {
+  font-size: 30px;
+}
+
+.card-text {
+  background: #EEB25A;
+  size: 5px;
+  padding: 5px;
+  color: #000;
+}
+
+.card-titulo {
+  margin-bottom: 10px;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card {
+  flex: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-button {
+  padding: 10px;
+  border-radius: 5px;
+  size: 20px;
+  background: transparent;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+.card-button:hover {
+  color: #EEB25A;
+  background: #000;
+  transition: 0.7s;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 2%;
+}
+
+.standard-section {
+  padding: 5px 0;
+  min-height: 200px;
+}
+
+.titulos {
+  color: #EEB25A;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.contenedor {
+  display: flex;
+  background: #EEB25A;
+  padding: 10px;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}
+
+.contenedor-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-wrapper {
+  background-color: #000;
+}
+
+.flex-50 {
+  width: 50%;
+  padding: 15px;
+}
+
+.mapa {
+  width: 100%;
+}
+
+.slider3 {
+  width: 100%;
+  background-image: url(/assets/images/local_1.jpg);
+  animation: fotoslocal 40s infinite;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@keyframes fotoslocal {
+  20% {
+    background-image: url(/assets/images/local_2.jpg);
+  }
+  40% {
+    background-image: url(/assets/images/local_3.jpg);
+  }
+  60% {
+    background-image: url(/assets/images/local_3.jpg);
+  }
+  80% {
+    background-image: url(/assets/images/local_4.jpg);
+  }
+  100% {
+    background-image: url(/assets/images/local_1.jpg);
+  }
+}/*# sourceMappingURL=styles.css.map */
+
+.modal-container {
+  width: 90%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: #fff;
+  background-color: #121212 !important;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-header {
+  display: flex;
+  justify-content:space-around;
+  background-color: #0a0909;
+  color: #ffffff;
+  width: 100%;
+  font-size: xx-large;
+}
+
+.modal-header-title {
+  justify-self: start;
+}
+.modal-header-button {
+  cursor: pointer;
+}
+
+.modal-container > .modal-content {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+}
+
+.modal-container > div > img {
+  height: 120px;
+  width: 120px;
+}
+
+.total-content {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.delete-product {
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+  color: aliceblue;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.cantidad-carrito {
+  background-color: rgb(255, 136, 0);
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none;
+}
+

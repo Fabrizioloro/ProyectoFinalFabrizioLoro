@@ -1,0 +1,81 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width:1280px;
+    width:100%;
+    padding:0 2%;
+}
+
+.standard-section {
+    padding:5px 0;
+    min-height: 200px;
+}
+
+.titulos {
+    color: $orange;
+    height: 100px;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.contenedor {
+    display: flex;
+    background: $orange;
+    padding: 10px;
+
+}
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content:space-between;
+}
+.contenedor-flex {
+    display: flex;
+    justify-content:space-between;
+}
+
+.main-wrapper{
+    background-color: $black;
+}
+
+.flex-50{ 
+    width:50%; 
+    padding:15px
+}
+.mapa{
+    width: 100%;
+}
+.slider3{
+    width:100%;
+    background-image:url(/assets/images/local_1.jpg);
+    animation: fotoslocal 40s infinite;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  @keyframes fotoslocal {
+    20%{
+      background-image:url(/assets/images/local_2.jpg);
+    }
+    40%{
+      background-image:url(/assets/images/local_3.jpg);
+    }
+    60%{
+      background-image:url(/assets/images/local_3.jpg);
+    }
+    80%{
+      background-image:url(/assets/images/local_4.jpg);
+    }
+    100%{
+      background-image:url(/assets/images/local_1.jpg);
+    }
+  }
